@@ -5,7 +5,7 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 ![teaser](img/15datasets_teaser.png)
 
 
-## Under Construction**
+## Under Construction
 
 We will release the training & inference code, ckpt, and entire dataset download link to this repo later this year.
 
