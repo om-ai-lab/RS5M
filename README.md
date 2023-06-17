@@ -7,12 +7,12 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 ## Under Construction
 
-We will release the training & inference code, ckpt, and entire dataset download link to this repo later this year.
+We will release the training & inference code, checkpoints, the dataset download link, and the complete dataset metafile to this repo later this year.
 
 
 ## MetaFile
 
-https://huggingface.co/datasets/Zilun/RS5M
+The metafile for validation set of RS5M: https://huggingface.co/datasets/Zilun/RS5M_val
 
 
 ## Statistics
