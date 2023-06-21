@@ -12,10 +12,6 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 ![teaser](15datasets_teaser.png)
 
 
-
-
-
-
 ## Under Construction
 
 We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.
@@ -55,6 +51,9 @@ The metafile of RS5M: [https://huggingface.co/datasets/Zilun/RS5M](https://huggi
 |Total|2,062,377|-|-|
 
 
+## Awesome Remote Sensing Vision-Language Models & Papers
+
+* https://github.com/om-ai-lab/awesome-RSVLM
 
 ## BibTeX Citation
 
