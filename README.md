@@ -1,6 +1,6 @@
 # RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model 
 
-* Zilun Zhang, Tiancheng Zhao, Yulong Guo, Jianwei Yin.
+* Zilun Zhang, Tiancheng Zhao, Yulong Guo, Jianwei Yin
 
 * Preprint: https://arxiv.org/abs/2306.11300
 
