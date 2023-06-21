@@ -1,18 +1,29 @@
-# RS5M Dataset
+# RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model 
+
+* Zilun Zhang, Tiancheng Zhao, Yulong Guo, and Jianwei Yin.
+
+* Preprint: https://arxiv.org/abs/2306.11300
+
+
+##  RS5M Dataset
 
 Pre-trained Vision-Language Foundation Models utilizing extensive image-text paired data have demonstrated unprecedented image-text association capabilities, achieving remarkable results across various downstream tasks. A critical challenge is how to make use of existing large-scale pre-trained VLMs, which are trained on common objects, to perform the domain-specific transfer for accomplishing domain-related downstream tasks. In this paper, we propose a new framework that includes the Domain Foundation Model (DFM), bridging the gap between the general foundation model (GFM) and domain-specific downstream tasks. Moreover, we present an image-text paired dataset in the field of remote sensing (RS), RS5M, which has 5 million remote sensing images with English descriptions. The dataset is obtained from filtering publicly available image-text paired datasets and captioning label-only RS datasets with pre-trained models. These constitute the first large-scale RS image-text paired dataset. Additionally, we tried several Parameter-Efficient Tuning methods with Vision-Language Models on RS5M as the baseline for the DFM. Experimental results show that our proposed datasets are highly effective for various tasks, improving upon the baseline by $\sim$ 16 % in zero-shot classification tasks, and obtain good results in both Vision-Language Retrieval and Semantic Localization tasks.
 
 ![teaser](15datasets_teaser.png)
 
 
+
+
+
+
 ## Under Construction
 
-We will release the training & inference code, checkpoints, the dataset download link, and the complete dataset metafile to this repo later this year.
+We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.
 
 
 ## MetaFile
 
-The metafile for validation set of RS5M: https://huggingface.co/datasets/Zilun/RS5M_val
+The metafile of RS5M: [https://huggingface.co/datasets/Zilun/RS5M](https://huggingface.co/datasets/Zilun/RS5M)
 
 
 ## Statistics
@@ -42,3 +53,22 @@ The metafile for validation set of RS5M: https://huggingface.co/datasets/Zilun/R
 |BigEarthNet|344,385|Train|Yes|
 |MillionAID|990,848|Test|No|
 |Total|2,062,377|-|-|
+
+
+
+## BibTeX Citation
+
+If you use RS5M in a research paper, we would appreciate using the following citations:
+
+```
+@misc{zhang2023rs5m,
+      title={RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model}, 
+      author={Zilun Zhang and Tiancheng Zhao and Yulong Guo and Jianwei Yin},
+      year={2023},
+      eprint={2306.11300},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+
