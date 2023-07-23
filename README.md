@@ -21,6 +21,14 @@ We will release the training & inference code, checkpoints, and the dataset down
 
 The metafile of RS5M: [https://huggingface.co/datasets/Zilun/RS5M](https://huggingface.co/datasets/Zilun/RS5M)
 
+## Contact
+Email: zilun.zhang@zju.edu.cn
+
+
+WeChat: zilun960822
+
+
+Slack Group: https://join.slack.com/t/slack-nws5068/shared_invite/zt-1zpu3xt85-m8I3kVCp4qxAA1r1bDmKmQ
 
 ## Statistics
 ### PUB11 Subset
