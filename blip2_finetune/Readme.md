@@ -1,6 +1,6 @@
 # Inference with Tuned BLIP2
 
-# How to Use
+## How to Use
 
 ```
 # Try BLIP2 without LoRA
