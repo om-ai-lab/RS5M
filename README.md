@@ -18,7 +18,7 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 ## MetaFile
 
-The metafile of RS5M: [https://huggingface.co/datasets/Zilun/RS5M](https://huggingface.co/datasets/Zilun/RS5M)
+The metafile of RS5M: https://huggingface.co/datasets/Zilun/RS5M/tree/v4/metadata
 
 
 ## Contact
