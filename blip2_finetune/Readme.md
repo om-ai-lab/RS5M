@@ -1,5 +1,13 @@
 # Inference with Tuned BLIP2
 
+## Data
+
+1. Download from: https://huggingface.co/datasets/Zilun/blip2_lora_dataset
+
+2. Change name from xxx_test to xxx/test
+
+   i.e. /home/zilun/RS5M_v4/blip2_ft/data/RSITMD_test ---> /home/zilun/RS5M_v4/blip2_ft/data/RSITMD/test
+
 ## How to Use
 
 ```
