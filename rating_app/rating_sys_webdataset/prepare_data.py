@@ -36,7 +36,7 @@ def prepare_data(
     raw_dataset = wds.WebDataset(val_dataset_fpath)
     dataset = (
         raw_dataset
-            .shuffle(num_shuffle)
+            .shuffle(num_shuffle, initial=num_shuffle)
             .decode(decode_img_text)
             .to_tuple("input.name", "input.image", "input.caption")
     )
@@ -62,9 +62,12 @@ def select_data(val_dataset, sample_num, image_save_path, csv_path):
 
 
 if __name__ == "__main__":
-    sample_num = 100000
-    val_dataset = prepare_data(dataset_root="/mnt/data/nfs/zl/RS5M_data/webdataset/", num_shuffle=100000)
     image_save_path = "./static"
+    os.makedirs(image_save_path, exist_ok=True)
+
+    sample_num = 10000
+    val_dataset = prepare_data(dataset_root="/media/zilun/fanxiang4t/RS5M_data", num_shuffle=200000)
+
     csv_path = "./rs3_dump.csv"
     select_data(val_dataset, sample_num, image_save_path, csv_path)
 
