@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image-Text Pair Rating</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+    .image-text {
+      width: 50%;
+    }
+    .ratings {
+      width: 50%;
+      background-color: #f5f5f5;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      line-height: 1.2;
+    }
+    .submit-button {
+      display: block;
+      width: 200px;
+      height: 50px;
+      margin: 20px auto;
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    .submit-button:hover {
+      background-color: #45a049;
+    }
+    .header {
+      margin-top: 30px;
+      margin-bottom: 20px;  /* Add a bottom margin */
+    }
+  </style>
+</head>
+<body>
+  <h1>Image-Text Pair Rating</h1>
+  <div class="container">
+    <div class="image-text">
+      <form method="post">
+        <img src="/{{ image_path }}" alt="Image" style="width: 700px;"><br>
+        <strong><p>{{ description }}</p></strong>
+<!--        <strong><p style="text-align: center;">{{ description }}</p></strong>-->
+
+      </form>
+    </div>
+    <div class="ratings">
+      <form method="post">
+        <b class="header"><label for="relevance_detail">Relevance & Detail: </label></b>
+        <p>Evaluates how well the generated caption relates to the image and captures the essential details.</p>
+<!--        {% for i in range(1, 6) %}-->
+<!--        <input type="radio" id="relevance{{ i }}" name="relevance" value="{{ i }}">-->
+<!--        <label for="relevance{{ i }}">{{ i }}</label><br>-->
+<!--        {% endfor %}-->
+        <input type="radio" id="relevance_detail{{ 5 }}" name="relevance_detail" value="{{ 5  }}">
+        <label for="relevance_detail{{ 5 }}">{{ "5 - Excellent:     The caption perfectly describes the main elements of the image with precise details." }}</label><br>
+        <input type="radio" id="relevance_detail{{ 4 }}" name="relevance_detail" value="{{ 4 }}">
+        <label for="relevance_detail{{ 4 }}">{{ "4 - Good:          The caption describes most of the main elements accurately but may miss minor details." }}</label><br>
+        <input type="radio" id="relevance_detail{{ 3 }}" name="relevance_detail" value="{{ 3 }}">
+        <label for="relevance_detail{{ 3 }}">{{ "3 - Average:       The caption captures the general idea but lacks some significant details." }}</label><br>
+        <input type="radio" id="relevance_detail{{ 2 }}" name="relevance_detail" value="{{ 2 }}">
+        <label for="relevance_detail{{ 2 }}">{{ "2 - Below Average: The caption misses many important elements and may misrepresent the image." }}</label><br>
+        <input type="radio" id="relevance_detail{{ 1 }}" name="relevance_detail" value="{{ 1 }}">
+        <label for="relevance_detail{{ 1 }}">{{ "1 - Poor:          The caption is largely unrelated to the image or misses the main point entirely." }}</label><br>
+        <br>
+        <b class="header"><label for="hallucination">Hallucination: </label></b>
+        <p>Assesses the extent to which the caption introduces elements or concepts not present in the image.</p>
+<!--        {% for i in range(1, 6) %}-->
+<!--        <input type="radio" id="clarity{{ i }}" name="clarity" value="{{ i }}">-->
+<!--        <label for="clarity{{ i }}">{{ i }}</label><br>-->
+<!--        {% endfor %}-->
+        <input type="radio" id="hallucination{{ 5 }}" name="hallucination" value="{{ 5  }}">
+        <label for="hallucination{{ 5 }}">{{ "5 - Excellent:     No hallucinated details; the caption strictly adheres to the image content." }}</label><br>
+        <input type="radio" id="hallucination{{ 4 }}" name="hallucination" value="{{ 4 }}">
+        <label for="hallucination{{ 4 }}">{{ "4 - Good:          Minor hallucinated details that don't significantly alter the overall meaning." }}</label><br>
+        <input type="radio" id="hallucination{{ 3 }}" name="hallucination" value="{{ 3 }}">
+        <label for="hallucination{{ 3 }}">{{ "3 - Average:       Some noticeable hallucinations, but the core message remains intact." }}</label><br>
+        <input type="radio" id="hallucination{{ 2 }}" name="hallucination" value="{{ 2 }}">
+        <label for="hallucination{{ 2 }}">{{ "2 - Below Average: Many hallucinated details that mislead the viewer." }}</label><br>
+        <input type="radio" id="hallucination{{ 1 }}" name="hallucination" value="{{ 1 }}">
+        <label for="hallucination{{ 1 }}">{{ "1 - Poor:          The caption is mostly based on hallucinated content, with little to no relation to the actual image." }}</label><br>
+        <br>
+        <b class="header"><label for="fluency">Fluency: </label></b>
+        <p>Evaluates the linguistic quality of the caption and its brevity.</p>
+<!--        {% for i in range(1, 6) %}-->
+<!--        <input type="radio" id="completeness{{ i }}" name="completeness" value="{{ i }}">-->
+<!--        <label for="completeness{{ i }}">{{ i }}</label><br>-->
+<!--        {% endfor %}-->
+        <input type="radio" id="fluency{{ 5 }}" name="fluency" value="{{ 5  }}">
+        <label for="fluency{{ 5 }}">{{ "5 - Excellent: The caption is linguistically flawless and conveys the message in the most concise manner." }}</label><br>
+        <input type="radio" id="fluency{{ 4 }}" name="fluency" value="{{ 4 }}">
+        <label for="fluency{{ 4 }}">{{ "4 - Good: The caption is mostly fluent with minor verbosity but remains clear." }}</label><br>
+        <input type="radio" id="fluency{{ 3 }}" name="fluency" value="{{ 3 }}">
+        <label for="fluency{{ 3 }}">{{ "3 - Average: Some linguistic errors or unnecessary words, but the message is understandable." }}</label><br>
+        <input type="radio" id="fluency{{ 2 }}" name="fluency" value="{{ 2 }}">
+        <label for="fluency{{ 2 }}">{{ "2 - Below Average: Several linguistic issues such as obvious misspellings or grammatical errors and a lack of conciseness. Hard to grasp." }}</label><br>
+        <input type="radio" id="fluency{{ 1 }}" name="fluency" value="{{ 1 }}">
+        <label for="fluency{{ 1 }}">{{ "1 - Poor: The caption is hard to understand due to major linguistic errors and excessive wordiness, such as duplication and broken sentences." }}</label><br>
+        <br>
+        <input class="submit-button" type="submit" value="Next">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
