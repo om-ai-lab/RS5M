@@ -62,6 +62,12 @@ The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS
   * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/v4/geometa/RS5M_pub11_geolocation.csv)
   * 880,354 image-text pairs contains "GPE", and most of them are city/country names.
 
+## BLIP2 fine-tuned with RSITMD dataset
+* Tuned with LoRA
+* Checkpoint and inference code can be found through this [link](https://github.com/om-ai-lab/RS5M/tree/main/blip2_finetune)
+
+## Image-Text Pair Rating Tool
+* [Link](https://github.com/om-ai-lab/RS5M/tree/main/rating_app/rating_sys_webdataset)
 
 ## Awesome Remote Sensing Vision-Language Models & Papers
 
