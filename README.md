@@ -11,14 +11,13 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 ![teaser](15datasets_teaser.png)
 
-
 [comment]: <## Under Construction>
 [comment]: <We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.>
 
 
 ## MetaFile
 
-The metafile of RS5M: https://huggingface.co/datasets/Zilun/RS5M/tree/v4/metadata
+The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/tree/v4/metadata
 
 
 ## Contact
@@ -57,6 +56,20 @@ Email: zilun.zhang@zju.edu.cn
 |BigEarthNet|344,385|Train|Yes|
 |MillionAID|990,848|Test|No|
 |Total|2,062,377|-|-|
+
+### Geo-Statistics
+* Statistics of geometa for images contain the UTM zone, latitude, longitude information.
+  * YFCC14M: 7841
+  * FMoW: 727,144
+  * BigEarthNet: 344,385
+
+![teaser](vis/geo_stats.png)
+![teaser](vis/longtail.png)
+
+* Extract entity with "GPE" label using [NER from NLTK](https://medium.com/nirman-tech-blog/locationtagger-a-python-package-to-extract-locations-from-text-or-web-page-dbb05f1648d3)
+      * Applied to captins in PUB11 subset
+      * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/v4/geometa/RS5M_pub11_geolocation.csv)
+      * 880,354 image-text pairs contains "GPE", and most of them are city/country names.
 
 
 ## Awesome Remote Sensing Vision-Language Models & Papers
