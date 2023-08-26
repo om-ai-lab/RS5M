@@ -12,11 +12,8 @@ from helper import latlon_to_city_country, convert_yfcc_timestamp
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--pub11_label_pkl', type=str,
-                        default="/Volumes/Tipro7000/RS5M_v3/pub11/RS5M_pub11_label.pkl",
+                        default="/media/zilun/wd-16/RS5M_v3/pub11/RS5M_pub11_label.pkl",
                         help='path of pub11 pkl')
-    parser.add_argument('--yfcc_dir', type=str,
-                        default="./sbu",
-                        help='yfcc dir')
     parser.add_argument('--geometa_template_path', type=str,
                         default="./geometa_template.json",
                         help='path of geometa_template json')
@@ -30,13 +27,15 @@ def main():
     pub11_label["meta_caption"] = None
     pub11_label["country"] = None
     pub11_label["month"] = None
+    pub11_label["longitude"] = None
+    pub11_label["latitude"] = None
 
     yfcc_subset_df = pub11_label[pub11_label["img_name"].str.contains("yfcc")]
     yfcc_info_list = pkl.load(open(args.yfcc_info_path, "rb"))
-    # yfcc_urls_list = yfcc_subset_df["url"].tolist()
-    # pkl.dump(yfcc_urls_list, open("yfcc_urls.pkl", "wb"))
+
     count = 0
     none_country = 0
+    has_coord = 0
     is_country = 0
     for df_row in tqdm(yfcc_subset_df.iterrows()):
         url = df_row[1]["url"]
@@ -45,7 +44,12 @@ def main():
             country, timestamp, season, cls_labels = None, None, None, None
             if url == download_url:
                 if latitude and longitude is not None:
+                    latitude = float(latitude)
+                    longitude = float(longitude)
                     country = latlon_to_city_country(latitude, longitude)
+                    df_row[1]["longitude"] = longitude
+                    df_row[1]["latitude"] = latitude
+                    has_coord += 1
 
                 if date_taken is not None:
                     season, day, month, year, hour = convert_yfcc_timestamp(date_taken)
@@ -83,8 +87,8 @@ def main():
                 if month is not None:
                     df_row[1]["month"] = month.split(", ")[-1]
 
-    print("There are {} non-country, {}, country".format(none_country, is_country))
-    yfcc_subset_df.to_csv("yfcc14m_geometa.csv", index=False)
+    print("There are {} non-country, {}, country, {} coord".format(none_country, is_country, has_coord))
+    yfcc_subset_df.to_csv("yfcc14m_geometa_coord.csv", index=False)
 
 
 if __name__ == "__main__":

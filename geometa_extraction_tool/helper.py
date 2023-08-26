@@ -251,7 +251,7 @@ def parse_fmow_df(gt_json, caption_template):
         .replace("{target_azimuth}", "%.2f" % target_azimuth) \
         .replace("{off_nadir}", "%.2f" % off_nadir)
 
-    return caption, country_name, month
+    return caption, country_name, month, (latitude, longitude), utm_zone
 
 
 def ben_timestamp2symdh(timestamp):
@@ -326,7 +326,7 @@ def parse_ben_df(ben_info, caption_template):
         .replace("{class_labels}", class_label) \
         .replace("{utm_zone}", utm_zone) \
         .replace("{timestamp}", "{} o'clock, {} {}, {}".format(hour, month, day, year))
-    return caption, month
+    return caption, month, utm_zone
 
 
 def draw_bbox(image_path, bbox, color=(0, 0, 255), thickness=20, show_nine_block=True):
