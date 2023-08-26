@@ -54,13 +54,13 @@ The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS
   * FMoW: 727,144
   * BigEarthNet: 344,385
 
-![teaser](vis/geo_stats.png)
-![teaser](vis/longtail.png)
+  ![teaser](vis/geo_stats.png)
+  ![teaser](vis/longtail.png)
 
 * Extract entity with "GPE" label using [NER from NLTK](https://medium.com/nirman-tech-blog/locationtagger-a-python-package-to-extract-locations-from-text-or-web-page-dbb05f1648d3)
-      * Applied to captins in PUB11 subset
-      * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/v4/geometa/RS5M_pub11_geolocation.csv)
-      * 880,354 image-text pairs contains "GPE", and most of them are city/country names.
+  * Applied to captins in PUB11 subset
+  * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/v4/geometa/RS5M_pub11_geolocation.csv)
+  * 880,354 image-text pairs contains "GPE", and most of them are city/country names.
 
 
 ## Awesome Remote Sensing Vision-Language Models & Papers
