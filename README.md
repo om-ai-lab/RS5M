@@ -2,7 +2,7 @@
 
 * Zilun Zhang, Tiancheng Zhao, Yulong Guo, Jianwei Yin
 
-* Preprint: https://arxiv.org/abs/2306.11300
+* Preprint (Updated on Aug 31): https://arxiv.org/abs/2306.11300
 
 
 ##  RS5M Dataset
