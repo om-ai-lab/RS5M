@@ -74,7 +74,7 @@ The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS
 * https://github.com/om-ai-lab/awesome-RSVLM
 
 ## Contact
-Email: zilun.zhang@mail.zju.edu.cn
+Email: zilun.zhang@zju.edu.cn
 
 WeChat: zilun960822
 
