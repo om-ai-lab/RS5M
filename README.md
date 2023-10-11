@@ -11,8 +11,8 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 ![teaser](15datasets_teaser.png)
 
-[comment]: <## Under Construction>
-[comment]: <We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.>
+## Under Construction
+We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.
 
 
 ## MetaFile
@@ -77,10 +77,10 @@ The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS
 Email: zilun.zhang@mail.zju.edu.cn
 
 
-<WeChat: zilun960822>
+WeChat: zilun960822
 
 
-<Slack Group: https://join.slack.com/t/slack-nws5068/shared_invite/zt-1zpu3xt85-m8I3kVCp4qxAA1r1bDmKmQ>
+Slack Group: https://join.slack.com/t/slack-nws5068/shared_invite/zt-1zpu3xt85-m8I3kVCp4qxAA1r1bDmKmQ
 
 
 ## BibTeX Citation
