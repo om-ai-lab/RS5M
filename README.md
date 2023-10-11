@@ -76,9 +76,7 @@ The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS
 ## Contact
 Email: zilun.zhang@mail.zju.edu.cn
 
-
 WeChat: zilun960822
-
 
 Slack Group: https://join.slack.com/t/slack-nws5068/shared_invite/zt-1zpu3xt85-m8I3kVCp4qxAA1r1bDmKmQ
 
