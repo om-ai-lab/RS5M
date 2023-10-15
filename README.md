@@ -14,10 +14,14 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 ## Under Construction
 We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.
 
+## Dataset Download (About 500GB, 128 webdataset tars)
+* Google Drive: Comming soon
+* Baidu Disk: Comming soon
 
 ## MetaFile
 
-The metafile of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/tree/v4/metadata
+* The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/tree/v5
+* See README.md in huggingface for breakdown explaination
 
 
 ## Statistics
