@@ -1,17 +1,12 @@
 from PIL import Image
 import clip
 import webdataset as wds
-from torch.utils.data import DataLoader, IterableDataset, ChainDataset, Dataset
+from torch.utils.data import DataLoader, Dataset
 import io
-import numpy as np
-from tqdm import tqdm
 import random
 import argparse
-import os
 import pandas as pd
 from tqdm import tqdm
-from datetime import datetime
-import pickle as pkl
 import os
 import time
 Image.MAX_IMAGE_PIXELS = None
