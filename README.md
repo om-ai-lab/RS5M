@@ -26,7 +26,7 @@ We will release the training & inference code, checkpoints, and the dataset down
 ## How to use this dataset
 
 1. Download the webdataset files from the link provided above.
-2. An example for data IO pipeline using webdataset files is provided in "dataloader.py".
+2. An example for data IO pipeline using webdataset files is provided in "dataloader.py". The throughput (images per second) is ~1800 images per second. (With Ryzen 3950x CPU and dual channel 3200MHZ DDR4 RAM)
 3. Run the following to have a taste:
    ```bash
    python dataloader.py --train_dir /media/zilun/mx500/RS5M/data/train --val_dir /media/zilun/mx500/RS5M/data/val --num_worker 16 --batch_size 400 --num_shuffle 10000
