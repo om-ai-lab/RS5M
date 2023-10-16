@@ -4,6 +4,8 @@
 
 * Preprint (Updated on Aug 31): https://arxiv.org/abs/2306.11300
 
+* Data: https://huggingface.co/datasets/Zilun/RS5M/
+
 
 ##  RS5M Dataset
 
@@ -17,9 +19,11 @@ We will release the training & inference code, checkpoints, and the dataset down
 ## Dataset Download (About 500GB, 128 webdataset tars)
 * Google Drive: Uploading (EST: 2023-10-22) 
 * Baidu Disk: Uploading (EST: 2023-10-18)
+* The BigEarthNet with RGB channels only (with corresponding filenames in our csv files)
+   * https://pan.baidu.com/s/1aCqRmnCeow18ry__R_oZow?pwd=6ya9
+   * Password: 6ya9
 
 ## MetaFile
-
 * The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/
 * See README.md in huggingface for breakdown explaination of each file.
 
