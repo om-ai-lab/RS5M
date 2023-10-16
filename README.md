@@ -71,7 +71,6 @@ We will release the training & inference code, checkpoints, and the dataset down
   * BigEarthNet: 344,385
 
   ![teaser](vis/geo_stats.png)
-  ![teaser](vis/longtail.png)
 
 * Extract entity with "GPE" label using [NER from NLTK](https://medium.com/nirman-tech-blog/locationtagger-a-python-package-to-extract-locations-from-text-or-web-page-dbb05f1648d3)
   * Applied to captins in PUB11 subset
