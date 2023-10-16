@@ -20,7 +20,7 @@ We will release the training & inference code, checkpoints, and the dataset down
 
 ## MetaFile
 
-* The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/tree/v5
+* The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/
 * See README.md in huggingface for breakdown explaination of each file.
 
 ## How to use this dataset
@@ -71,7 +71,7 @@ We will release the training & inference code, checkpoints, and the dataset down
 
 * Extract entity with "GPE" label using [NER from NLTK](https://medium.com/nirman-tech-blog/locationtagger-a-python-package-to-extract-locations-from-text-or-web-page-dbb05f1648d3)
   * Applied to captins in PUB11 subset
-  * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/v4/geometa/RS5M_pub11_geolocation.csv)
+  * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/main/pub11_NER_geolocation_info.csv)
   * 880,354 image-text pairs contains "GPE", and most of them are city/country names.
 
 ## BLIP2 fine-tuned with RSITMD dataset
