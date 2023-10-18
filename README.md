@@ -17,7 +17,8 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
-* Google Drive: Uploading (EST: 2023-10-22) 
+* Google Drive: Uploading
+  * https://drive.google.com/drive/folders/1NU6d9C50PUSzHdBy-wTi9HYLPHxtsHA3?usp=sharing
 * Baidu Disk
   * https://pan.baidu.com/s/1wPYMN4lJRdHbYn4wT4HbHQ?pwd=recd
   * Password: recd 
