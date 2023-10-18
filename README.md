@@ -9,7 +9,7 @@
 
 ##  RS5M Dataset
 
-Pre-trained Vision-Language Foundation Models utilizing extensive image-text paired data have demonstrated unprecedented image-text association capabilities, achieving remarkable results across various downstream tasks. A critical challenge is how to make use of existing large-scale pre-trained VLMs, which are trained on common objects, to perform the domain-specific transfer for accomplishing domain-related downstream tasks. In this paper, we propose a new framework that includes the Domain Foundation Model (DFM), bridging the gap between the general foundation model (GFM) and domain-specific downstream tasks. Moreover, we present an image-text paired dataset in the field of remote sensing (RS), RS5M, which has 5 million remote sensing images with English descriptions. The dataset is obtained from filtering publicly available image-text paired datasets and captioning label-only RS datasets with pre-trained models. These constitute the first large-scale RS image-text paired dataset. Additionally, we tried several Parameter-Efficient Tuning methods with Vision-Language Models on RS5M as the baseline for the DFM. Experimental results show that our proposed datasets are highly effective for various tasks, improving upon the baseline by $\sim$ 16 % in zero-shot classification tasks, and obtain good results in both Vision-Language Retrieval and Semantic Localization tasks.
+Pre-trained Vision-Language Foundation Models utilizing extensive image-text paired data have demonstrated unprecedented image-text association capabilities, achieving remarkable results across various downstream tasks. A critical challenge is how to make use of existing large-scale pre-trained VLMs, which are trained on common objects, to perform the domain-specific transfer for accomplishing domain-related downstream tasks. In this paper, we propose a new framework that includes the Domain Foundation Model (DFM), bridging the gap between the general foundation model (GFM) and domain-specific downstream tasks. Moreover, we present an image-text paired dataset in the field of remote sensing (RS), RS5M, which has 5 million remote sensing images with English descriptions. The dataset is obtained from filtering publicly available image-text paired datasets and captioning label-only RS datasets with pre-trained models. These constitute the first large-scale RS image-text paired dataset. Additionally, we tried several Parameter-Efficient Tuning methods with Vision-Language Models on RS5M as the baseline for the DFM. Experimental results show that our proposed datasets are highly effective for various tasks, improving upon the baseline by $\sim$ 16 % in zero-shot classification tasks, and obtaining good results in both Vision-Language Retrieval and Semantic Localization tasks.
 
 ![teaser](15datasets_teaser.png)
 
@@ -18,19 +18,22 @@ We will release the training & inference code, checkpoints, and the dataset down
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
 * Google Drive: Uploading (EST: 2023-10-22) 
-* Baidu Disk: Uploading (EST: 2023-10-18)
+* Baidu Disk
+  * https://pan.baidu.com/s/1wPYMN4lJRdHbYn4wT4HbHQ?pwd=recd
+  * Password: recd 
+
 * The BigEarthNet with RGB channels only (with corresponding filenames in our csv files)
    * https://pan.baidu.com/s/1aCqRmnCeow18ry__R_oZow?pwd=6ya9
    * Password: 6ya9
 
 ## MetaFile
 * The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/
-* See README.md in huggingface for breakdown explaination of each file.
+* See README.md in huggingface for a breakdown explanation of each file.
 
 ## How to use this dataset
 
 1. Download the webdataset files from the link provided above.
-2. An example for data IO pipeline using webdataset files is provided in "dataloader.py". The throughput (images per second) is ~1800 images per second. (With Ryzen 3950x CPU and dual channel 3200MHZ DDR4 RAM)
+2. An example of data IO pipeline using webdataset files is provided in "dataloader.py". The throughput (images per second) is ~1800 images per second. (With Ryzen 3950x CPU and dual-channel 3200MHZ DDR4 RAM)
 3. Run the following to have a taste:
    ```bash
    python dataloader.py --train_dir /media/zilun/mx500/RS5M/data/train --val_dir /media/zilun/mx500/RS5M/data/val --num_worker 16 --batch_size 400 --num_shuffle 10000
@@ -65,7 +68,7 @@ We will release the training & inference code, checkpoints, and the dataset down
 |Total|2,062,377|-|-|
 
 ### Geo-Statistics
-* Statistics of geometa for images contain the UTM zone, latitude, longitude information.
+* Statistics of geometa for images contain the UTM zone, latitude, and longitude information.
   * YFCC14M: 7841
   * FMoW: 727,144
   * BigEarthNet: 344,385
@@ -73,9 +76,9 @@ We will release the training & inference code, checkpoints, and the dataset down
   ![teaser](vis/geo_stats.png)
 
 * Extract entity with "GPE" label using [NER from NLTK](https://medium.com/nirman-tech-blog/locationtagger-a-python-package-to-extract-locations-from-text-or-web-page-dbb05f1648d3)
-  * Applied to captins in PUB11 subset
+  * Applied to captions in PUB11 subset
   * [Extraction Result](https://huggingface.co/datasets/Zilun/RS5M/blob/main/pub11_NER_geolocation_info.csv)
-  * 880,354 image-text pairs contains "GPE", and most of them are city/country names.
+  * 880,354 image-text pairs contain "GPE", and most of them are city/country names.
 
 ## BLIP2 fine-tuned with RSITMD dataset
 * Tuned with LoRA
