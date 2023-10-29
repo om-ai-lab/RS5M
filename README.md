@@ -33,9 +33,36 @@ We will release the training & inference code, checkpoints, and the dataset down
 
 ## How to use this dataset
 
-1. Download the webdataset files from the link provided above.
-2. An example of data IO pipeline using webdataset files is provided in "dataloader.py". The throughput (images per second) is ~1800 images per second. (With Ryzen 3950x CPU and dual-channel 3200MHZ DDR4 RAM)
-3. Run the following to have a taste:
+### Option 1
+1. Download the webdataset files from the link provided above. The dataset directory should look like this:
+   ```bash
+       /nas/zilun/RS5M_v5/webdataset                                                       
+       ├── train                        
+           ├── pub11-train-0000.tar                                                         
+           ├── pub11-train-0001.tar
+           ├── ......
+           ├── pub11-train-0030.tar                                         
+           ├── pub11-train-0031.tar
+           ├── rs3-train-0000.tar                                              
+           ├── rs3-train-0001.tar
+           ├── ......
+           ├── rs3-train-0030.tar                                              
+           ├── rs3-train-0031.tar
+       ├── val                        
+           ├── pub11-val-0000.tar                                                         
+           ├── pub11-val-0001.tar
+           ├── ......
+           ├── pub11-val-0030.tar                                         
+           ├── pub11-val-0031.tar
+           ├── rs3-val-0000.tar                                              
+           ├── rs3-val-0001.tar
+           ├── ......
+           ├── rs3-val-0030.tar                                              
+           ├── rs3-val-0031.tar
+
+    ```
+3. An example of data IO pipeline using webdataset files is provided in "dataloader.py". The throughput (images per second) is ~1800 images per second. (With Ryzen 3950x CPU and dual-channel 3200MHZ DDR4 RAM)
+4. Run the following to have a taste:
    ```bash
    python dataloader.py --train_dir /media/zilun/mx500/RS5M/data/train --val_dir /media/zilun/mx500/RS5M/data/val --num_worker 16 --batch_size 400 --num_shuffle 10000
    ```
