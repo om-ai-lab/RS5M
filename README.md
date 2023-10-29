@@ -33,7 +33,9 @@ We will release the training & inference code, checkpoints, and the dataset down
 
 ## How to use this dataset
 
-### Option 1
+### Option 1 (Recommended)
+* We create the webdataset format files containing paired image and text for sequential data io. Do **NOT** untar the files.
+
 1. Download the webdataset files from the link provided above. The dataset directory should look like this:
    ```bash
        /nas/zilun/RS5M_v5/webdataset                                                       
@@ -66,6 +68,35 @@ We will release the training & inference code, checkpoints, and the dataset down
    ```bash
    python dataloader.py --train_dir /media/zilun/mx500/RS5M/data/train --val_dir /media/zilun/mx500/RS5M/data/val --num_worker 16 --batch_size 400 --num_shuffle 10000
    ```
+### Option 2
+* We also provide the pure image files, which could be used with the metafiles from huggingface. Due to the huge amount of the image data, an SSD drive is recommended.
+
+1. Download the files from the link provided above. The dataset directory should look like this:
+   ```bash
+       /nas/zilun/RS5M_v5/img_only                                                      
+       ├── pub11                        
+           ├── pub11.tar.gz_aa                                                       
+           ├── pub11.tar.gz_ab
+           ├── ......
+           ├── pub11.tar.gz_ba                                              
+           ├── pub11.tar.gz_bc
+       ├── rs3                        
+           ├── ben
+               ├── ben.tar.gz_aa                                       
+           ├── fmow
+               ├── fmow.tar.gz_aa
+               ├── fmow.tar.gz_ab
+               ├── ......
+               ├── fmow.tar.gz_ap
+               ├── fmow.tar.gz_aq
+           ├── millionaid
+               ├── millionaid.tar.gz_aa
+               ├── millionaid.tar.gz_ab
+               ├── ......
+               ├── millionaid.tar.gz_ap
+               ├── millionaid.tar.gz_aq                                   
+    ```
+2. Combine and untar the files. You will have the images files now.
 
 ## Statistics
 ### PUB11 Subset
