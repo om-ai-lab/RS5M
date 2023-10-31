@@ -97,6 +97,16 @@ We will release the training & inference code, checkpoints, and the dataset down
                ├── millionaid.tar.gz_aq                                   
     ```
 2. Combine and untar the files. You will have the images files now.
+    ```
+     # optional, for split and zip the dataset
+     tar -I pigz -cvf - BigEarthNet-S2-v1.0-rgb | split --bytes=500MB - ben.tar.gz_
+
+     # combine different parts into one
+     cat ben.tar* > ben.tar
+
+     # extract
+     tar -xvf ben.tar
+    ```
 
 ## Statistics
 ### PUB11 Subset
