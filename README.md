@@ -71,7 +71,7 @@ We will release the training & inference code, checkpoints, and the dataset down
 ### Option 2
 * We also provide the pure image files, which could be used with the metafiles from huggingface. Due to the huge amount of the image data, an SSD drive is recommended.
 
-1. Download the files from the link provided above. The dataset directory should look like this:
+1. Download the files from the [link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
    ```bash
        /nas/zilun/RS5M_v5/img_only                                                      
        ├── pub11                        
