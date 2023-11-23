@@ -27,7 +27,7 @@ def build_model(model_name, ckpt_path, device):
         msg = model.load_state_dict(checkpoint, strict=False)
 
     elif model_name == "ViT-H-14":
-        model, _, _ = open_clip.create_model_and_transforms("ViT-H/14", pretrained="openclip")
+        model, _, _ = open_clip.create_model_and_transforms("ViT-H/14", pretrained="laion2b_s32b_b79k")
         checkpoint = torch.load(ckpt_path, map_location="cpu")
         msg = model.load_state_dict(checkpoint, strict=False)
 
