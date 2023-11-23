@@ -13,8 +13,34 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 ![teaser](15datasets_teaser.png)
 
-## Under Construction
-We will release the training & inference code, checkpoints, and the dataset download link to this repo later this year.
+## GeoRSCLIP Model
+### Installation
+
+* Install Pytorch following instruction from official website
+
+```bash
+  pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+```
+
+* Install other dependencies
+
+```bash
+  pip install pillow pandas scikit-learn ftfy tqdm matplotlib transformers adapter-transformers open_clip_torch pycocotools timm clip-benchmark and torch-rs
+```
+
+### Usage
+
+* Clone the repo from: https://huggingface.co/Zilun/GeoRSCLIP
+
+* Unzip the test data
+
+* Run the inference script:
+```bash
+  python inference.py --ckpt-path ../ckpt/RS5M_ViT-B-32.pt --test-dataset-dir /home/zilun/RS5M_v5/data/rs5m_test_data
+```
+
+
+### Experiment Result
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
 * Google Drive: 
