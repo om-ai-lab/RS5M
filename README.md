@@ -194,6 +194,11 @@ WeChat: zilun960822
 
 Slack Group: https://join.slack.com/t/slack-nws5068/shared_invite/zt-1zpu3xt85-m8I3kVCp4qxAA1r1bDmKmQ
 
+## Acknowledgement
+
+We thank Delong Chen and his ITRA framework for helping us fine-tune the CLIP-like model.
+https://itra.readthedocs.io/en/latest/Contents/introduction/overview.html
+
 
 ## BibTeX Citation
 
