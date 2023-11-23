@@ -21,7 +21,8 @@ We will release the training & inference code, checkpoints, and the dataset down
   * https://drive.google.com/drive/folders/1NU6d9C50PUSzHdBy-wTi9HYLPHxtsHA3?usp=sharing
 * Baidu Disk
   * https://pan.baidu.com/s/1wPYMN4lJRdHbYn4wT4HbHQ?pwd=recd
-  * Password: recd 
+  * Password: recd
+  * RS5M_v5 > data
 
 * The BigEarthNet with RGB channels only (with corresponding filenames in our csv files)
    * https://pan.baidu.com/s/1aCqRmnCeow18ry__R_oZow?pwd=6ya9
