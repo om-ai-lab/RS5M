@@ -25,7 +25,7 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 * Install other dependencies
 
 ```bash
-  pip install pillow pandas scikit-learn ftfy tqdm matplotlib transformers adapter-transformers open_clip_torch pycocotools timm clip-benchmark and torch-rs
+  pip install pillow pandas scikit-learn ftfy tqdm matplotlib transformers adapter-transformers open_clip_torch pycocotools timm clip-benchmark torch-rs
 ```
 
 ### Usage
@@ -38,12 +38,31 @@ git clone https://huggingface.co/Zilun/GeoRSCLIP
 
 * Unzip the test data
 ```bash
-rs5m_test_data.zip
+unzip rs5m_test_data.zip
 ```
 
 * Run the inference script:
 ```bash
-  python inference.py --ckpt-path ../ckpt/RS5M_ViT-B-32.pt --test-dataset-dir /home/zilun/RS5M_v5/data/rs5m_test_data
+  python inference/inference.py --ckpt-path /your/local/path/to/RS5M_ViT-B-32.pt --test-dataset-dir /your/local/path/to/rs5m_test_data
+```
+
+* (Optional) If you just want to load the GeoRSCLIP model:
+
+```python
+
+  import open_clip
+  import torch
+  from inference_tool import get_preprocess
+
+
+  ckpt_path = "/your/local/path/to/RS5M_ViT-B-32.pt"
+  model, _, _ = open_clip.create_model_and_transforms("ViT-B/32", pretrained="openai")
+  checkpoint = torch.load(ckpt_path, map_location="cpu")
+  msg = model.load_state_dict(checkpoint, strict=False)
+  model = model.to("cuda")
+  img_preprocess = get_preprocess(
+        image_resolution=224,
+  )
 ```
 
 
