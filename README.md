@@ -16,7 +16,7 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 ## GeoRSCLIP Model
 ### Installation
 
-* Install Pytorch following instruction from official website
+* Install Pytorch following instructions from the official website
 
 ```bash
   pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
@@ -32,7 +32,14 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 * Clone the repo from: https://huggingface.co/Zilun/GeoRSCLIP
 
+```bash
+git clone https://huggingface.co/Zilun/GeoRSCLIP
+```
+
 * Unzip the test data
+```bash
+rs5m_test_data.zip
+```
 
 * Run the inference script:
 ```bash
@@ -41,6 +48,11 @@ Pre-trained Vision-Language Foundation Models utilizing extensive image-text pai
 
 
 ### Experiment Result
+||EuroSAT_acc|	RESISC45_acc|	AID_acc|	retrieval-image2text-R@1-rsitmd|	retrieval-image2text-R@5-rsitmd|	retrieval-image2text-R@10-rsitmd|	retrieval-text2image-R@1-rsitmd|	retrieval-text2image-R@5-rsitmd	|retrieval-text2image-R@10-rsitmd	|retrieval-mean-recall-rsitmd|	retrieval-image2text-R@1-rsicd|	retrieval-image2text-R@5-rsicd|	retrieval-image2text-R@10-rsicd|	retrieval-text2image-R@1-rsicd|	retrieval-text2image-R@5-rsicd|	retrieval-text2image-R@10-rsicd|	retrieval-mean-recall-rsicd	|Selo_Rsu|	Selo_Rda|	Selo_Ras|	Selo_Rmi|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|GeoRSCLIP-ViTB32|61.40|	72.74|	74.42|	17.92|	34.96|	46.02|	14.12|	41.46|	57.52|	35.33|	12.17|	28.45|	38.61|	9.31|	26.51|	41.28|	26.06|	0.755636|	0.730925|	0.258044|	0.744670|
+|GeoRSCLIP-ViTH14|67.47|	73.83|	76.33|	23.45|	42.92|	53.32|	18.01|	44.60|	59.96|	40.38|	14.27|	29.55|	40.44|	11.38|	30.80|	44.41|	28.48|	0.759515|	0.741806|	0.256649|	0.749430|
+
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
 * Google Drive: 
