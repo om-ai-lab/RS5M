@@ -65,6 +65,7 @@ unzip data/rs5m_test_data.zip
         image_resolution=224,
   )
 ```
+
 ```python
 
   import open_clip
