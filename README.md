@@ -88,7 +88,7 @@ unzip data/rs5m_test_data.zip
 |GeoRSCLIP-ViTB32|61.40|	72.74|	74.42|	17.92|	34.96|	46.02|	14.12|	41.46|	57.52|	35.33|	12.17|	28.45|	38.61|	9.31|	26.51|	41.28|	26.06|	0.755636|	0.730925|	0.258044|	0.744670|
 |GeoRSCLIP-ViTH14|67.47|	73.83|	76.33|	23.45|	42.92|	53.32|	18.01|	44.60|	59.96|	40.38|	14.27|	29.55|	40.44|	11.38|	30.80|	44.41|	28.48|	0.759515|	0.741806|	0.256649|	0.749430|
 
-### RS-SD
+## RS-SD
 * We will retrain the RS-SD based on v5 version of RS5M dataset. The ckpt will be released here in 1 or 2 weeks.
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
