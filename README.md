@@ -83,10 +83,57 @@ unzip data/rs5m_test_data.zip
 ```
 
 ### Experiment Result
-||EuroSAT_acc|	RESISC45_acc|	AID_acc|	retrieval-image2text-R@1-rsitmd|	retrieval-image2text-R@5-rsitmd|	retrieval-image2text-R@10-rsitmd|	retrieval-text2image-R@1-rsitmd|	retrieval-text2image-R@5-rsitmd	|retrieval-text2image-R@10-rsitmd	|retrieval-mean-recall-rsitmd|	retrieval-image2text-R@1-rsicd|	retrieval-image2text-R@5-rsicd|	retrieval-image2text-R@10-rsicd|	retrieval-text2image-R@1-rsicd|	retrieval-text2image-R@5-rsicd|	retrieval-text2image-R@10-rsicd|	retrieval-mean-recall-rsicd	|Selo_Rsu|	Selo_Rda|	Selo_Ras|	Selo_Rmi|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|GeoRSCLIP-ViTB32|61.40|	72.74|	74.42|	17.92|	34.96|	46.02|	14.12|	41.46|	57.52|	35.33|	12.17|	28.45|	38.61|	9.31|	26.51|	41.28|	26.06|	0.755636|	0.730925|	0.258044|	0.744670|
-|GeoRSCLIP-ViTH14|67.47|	73.83|	76.33|	23.45|	42.92|	53.32|	18.01|	44.60|	59.96|	40.38|	14.27|	29.55|	40.44|	11.38|	30.80|	44.41|	28.48|	0.759515|	0.741806|	0.256649|	0.749430|
+* All tasks
+
+  ||EuroSAT_acc|	RESISC45_acc|	AID_acc|	retrieval-image2text-R@1-rsitmd|	retrieval-image2text-R@5-rsitmd|	retrieval-image2text-R@10-rsitmd|	retrieval-text2image-R@1-rsitmd|	retrieval-text2image-R@5-rsitmd	|retrieval-text2image-R@10-rsitmd	|retrieval-mean-recall-rsitmd|	retrieval-image2text-R@1-rsicd|	retrieval-image2text-R@5-rsicd|	retrieval-image2text-R@10-rsicd|	retrieval-text2image-R@1-rsicd|	retrieval-text2image-R@5-rsicd|	retrieval-text2image-R@10-rsicd|	retrieval-mean-recall-rsicd	|Selo_Rsu|	Selo_Rda|	Selo_Ras|	Selo_Rmi|
+  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+  |GeoRSCLIP-ViTB32|61.40|	72.74|	74.42|	17.92|	34.96|	46.02|	14.12|	41.46|	57.52|	35.33|	12.17|	28.45|	38.61|	9.31|	26.51|	41.28|	26.06|	0.755636|	0.730925|	0.258044|	0.744670|
+  |GeoRSCLIP-ViTH14|67.47|	73.83|	76.33|	23.45|	42.92|	53.32|	18.01|	44.60|	59.96|	40.38|	14.27|	29.55|	40.44|	11.38|	30.80|	44.41|	28.48|	0.759515|	0.741806|	0.256649|	0.749430|
+
+* RSCTIR Task
+
+  * RSICD Test set
+    | Method             | Paradigm        | Tuned on         | R@1 (I2T) | R@5 (I2T) | R@10 (I2T) | R@1 (T2I) | R@5 (T2I) | R@10 (T2I) | mR    |
+    |--------------------|-----------------|------------------|-----------|-----------|------------|-----------|-----------|------------|-------|
+    | LW-MCR | Supervised      | RSICD            | 3.29%     | 12.52%    | 19.93%     | 4.66%     | 17.51%    | 30.02%     | 14.66%|
+    | VSE++    | Supervised      | RSICD            | 3.38%     | 9.51%     | 17.46%     | 2.82%     | 11.32%    | 18.10%     | 10.43%|
+    | AFMFN    | Supervised      | RSICD            | 5.39%     | 15.08%    | 23.40%     | 4.90%     | 18.28%    | 31.44%     | 16.42%|
+    | KCR      | Supervised      | RSICD            | 5.84%     | 22.31%    | 36.12%     | 4.76%     | 18.59%    | 27.20%     | 19.14%|
+    | GaLR    | Supervised      | RSICD            | 6.59%     | 19.85%    | 31.04%     | 4.69%     | 19.48%    | 32.13%     | 18.96%|
+    | SWAN               | Supervised      | RSICD            | 7.41%     | 20.13%    | 30.86%     | 5.56%     | 22.26%    | 37.41%     | 20.61%|
+    | HVSA   | Supervised      | RSICD            | 7.47%     | 20.62%    | 32.11%     | 5.51%     | 21.13%    | 34.13%     | 20.16%|
+    | PIR     | Supervised      | RSICD            | 9.88%     | 27.26%    | 39.16%     | 6.97%     | 24.56%    | 38.92%     | 24.46%|
+    | FAAMI   | Supervised      | RSICD            | 10.44%    | 22.66%    | 30.89%     | 8.11%     | 25.59%    | 41.37%     | 23.18%|
+    | Multilanguage   | Supervised | RSICD          | 10.70%    | 29.64%    | 41.53%     | 9.14%     | 28.96%    | 44.59%     | 27.42%|
+    | PE-RSITR   | GVLM + FT     | RSICD            | 14.13%    | 31.51%    | 44.78%     | 11.63%    | 33.92%    | 50.73%     | 31.12%|
+    | MTGFE              | Supervised      | RSICD            | 15.28%    | 37.05%    | 51.60%     | 8.67%     | 27.56%    | 43.92%     | 30.68%|
+    | RemoteCLIP         | GVLM + FT   | RET-3 + DET-10 + SEG-4 | 17.02% | 37.97% | 51.51% | 13.71% | 37.11% | 54.25% | 35.26% |
+    | CLIP-Baseline      | GVLM        | -                | 5.31%     | 14.18%    | 23.70%     | 5.78%     | 17.73%    | 27.76%     | 15.74% |
+    | **GeoRSCLIP-FT**   | GVLM + FT   | RS5M + RSICD | **22.14%** | 40.53% | 51.78% | **15.26%** | 40.46% | 57.79% | **38.00%** |
+    | **GeoRSCLIP-FT**   | GVLM + FT   | RS5M + RET-2 | **21.13%** | 41.72% | 55.63% | **15.59%** | 41.19% | 57.99% | **38.87%** |
+
+
+  * RSITMD test set
+  
+    | Method             | Paradigm        | Tuned on         | R@1 (I2T) | R@5 (I2T) | R@10 (I2T) | R@1 (T2I) | R@5 (T2I) | R@10 (T2I) | mR    |
+    |--------------------|-----------------|------------------|-----------|-----------|------------|-----------|-----------|------------|-------|
+    | LW-MCR       | Supervised      | RSITMD           | 10.18%    | 28.98%    | 39.82%     | 7.79%     | 30.18%    | 49.78%     | 27.79%|
+    | VSE++       | Supervised      | RSITMD           | 10.38%    | 27.65%    | 39.60%     | 7.79%     | 24.87%    | 38.67%     | 24.83%|
+    | AFMFN        | Supervised      | RSITMD           | 11.06%    | 29.20%    | 38.72%     | 9.96%     | 34.03%    | 52.96%     | 29.32%|
+    | HVSA          | Supervised      | RSITMD           | 13.20%    | 32.08%    | 45.58%     | 11.43%    | 39.20%    | 57.45%     | 33.15%|
+    | SWAN         | Supervised      | RSITMD           | 13.35%    | 32.15%    | 46.90%     | 11.24%    | 40.40%    | 60.60%     | 34.11%|
+    | GaLR         | Supervised      | RSITMD           | 14.82%    | 31.64%    | 42.48%     | 11.15%    | 36.68%    | 51.68%     | 31.41%|
+    | FAAMI        | Supervised      | RSITMD           | 16.15%    | 35.62%    | 48.89%     | 12.96%    | 42.39%    | 59.96%     | 35.99%|
+    | MTGFE         | Supervised      | RSITMD           | 17.92%    | 40.93%    | 53.32%     | 16.59%    | 48.50%    | 67.43%     | 40.78%|
+    | PIR          | Supervised      | RSITMD           | 18.14%    | 41.15%    | 52.88%     | 12.17%    | 41.68%    | 63.41%     | 38.24%|
+    | Multilanguage  | Supervised    | RSITMD           | 19.69%    | 40.26%    | 54.42%     | 17.61%    | 49.73%    | 66.59%     | 41.38%|
+    | PE-RSITR      | GVLM + FT      | RSITMD           | 23.67%    | 44.07%    | 60.36%     | 20.10%    | 50.63%    | 67.97%     | 44.47%|
+    | RemoteCLIP   | GVLM + FT      | RET-3 + DET-10 + SEG-4 | 27.88% | 50.66% | 65.71% | 22.17% | 56.46% | 73.41% | 49.38% |
+    | CLIP-Baseline   | GVLM         | -                | 9.51%     | 23.01%    | 32.74%     | 8.81%     | 27.88%    | 43.19%     | 24.19% |
+    | **GeoRSCLIP-FT**   | GVLM + FT | RS5M + RSITMD    | **30.09%**| 51.55%    | 63.27%     | **23.54%**| 57.52%    | 74.60%     | **50.10%**|
+    | **GeoRSCLIP-FT**   | GVLM + FT | RS5M + RET-2     | **32.30%**| 53.32%    | 67.92%     | **25.04%**| 57.88%    | 74.38%     | **51.81%**|
+
+
 
 ## RS-SD
 * We will retrain the RS-SD based on v5 version of RS5M dataset. The ckpt will be released here in 1 or 2 weeks.
