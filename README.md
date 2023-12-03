@@ -44,7 +44,7 @@ unzip data/rs5m_test_data.zip
 
 * Run the inference script:
 ```bash
-  python codebase/inference --ckpt-path /your/local/path/to/RS5M_ViT-B-32.pt --test-dataset-dir /your/local/path/to/rs5m_test_data
+  python codebase/inference.py --ckpt-path /your/local/path/to/RS5M_ViT-B-32.pt --test-dataset-dir /your/local/path/to/rs5m_test_data
 ```
 
 * (Optional) If you just want to load the GeoRSCLIP model:
