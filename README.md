@@ -2,7 +2,7 @@
 
 * Zilun Zhang, Tiancheng Zhao, Yulong Guo, Jianwei Yin
 
-* Preprint (Updated on Aug 31): https://arxiv.org/abs/2306.11300
+* Preprint (Updated on Dec 03): https://arxiv.org/abs/2306.11300
 
 * Data: https://huggingface.co/datasets/Zilun/RS5M/
 
