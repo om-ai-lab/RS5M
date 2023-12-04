@@ -6,6 +6,8 @@
 
 * Data: https://huggingface.co/datasets/Zilun/RS5M/
 
+* Model: https://huggingface.co/Zilun/GeoRSCLIP
+
 
 ##  RS5M Dataset
 
