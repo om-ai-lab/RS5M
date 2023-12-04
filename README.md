@@ -230,13 +230,13 @@ unzip data/rs5m_test_data.zip
 2. Combine and untar the files. You will have the images files now.
     ```
      # optional, for split and zip the dataset
-     tar -I pigz -cvf - BigEarthNet-S2-v1.0-rgb | split --bytes=500MB - ben.tar.gz_
+     tar -I pigz -cvf - pub11 | split --bytes=500MB - pub11.tar.gz_
 
      # combine different parts into one
-     cat ben.tar* > ben.tar
+     cat pub11.tar.gz_* > pub11.tar
 
      # extract
-     tar -xvf ben.tar
+     pigz -dc pub11.tar | tar -xvf - -C /data/zilun/RS5M_v5/img_only/
     ```
 
 ## Statistics
