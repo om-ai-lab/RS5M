@@ -322,23 +322,24 @@ If you use RS5M or GeoRSCLIP in a research paper, we would appreciate using the 
 Some other citations:
 ```
 @article{Long2021DiRS,
-title={On Creating Benchmark Dataset for Aerial Image Interpretation: Reviews, Guidances and Million-AID},
-author={Yang Long and Gui-Song Xia and Shengyang Li and Wen Yang and Michael Ying Yang and Xiao Xiang Zhu and Liangpei Zhang and Deren Li},
-journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
-year={2021},
-volume={14},
-pages={4205-4230}
+  title={On Creating Benchmark Dataset for Aerial Image Interpretation: Reviews, Guidances and Million-AID},
+  author={Yang Long and Gui-Song Xia and Shengyang Li and Wen Yang and Michael Ying Yang and Xiao Xiang Zhu and Liangpei Zhang and Deren Li},
+  journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing},
+  year={2021},
+  volume={14},
+  pages={4205-4230}
 }
 
 @inproceedings{Sumbul_2019,
-   title={Bigearthnet: A Large-Scale Benchmark Archive for Remote Sensing Image Understanding},
-   url={http://dx.doi.org/10.1109/IGARSS.2019.8900532},
-   DOI={10.1109/igarss.2019.8900532},
-   booktitle={IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium},
-   publisher={IEEE},
-   author={Sumbul, Gencer and Charfuelan, Marcela and Demir, Begum and Markl, Volker},
-   year={2019},
-   month=jul }
+  title={Bigearthnet: A Large-Scale Benchmark Archive for Remote Sensing Image Understanding},
+  url={http://dx.doi.org/10.1109/IGARSS.2019.8900532},
+  DOI={10.1109/igarss.2019.8900532},
+  booktitle={IGARSS 2019 - 2019 IEEE International Geoscience and Remote Sensing Symposium},
+  publisher={IEEE},
+  author={Sumbul, Gencer and Charfuelan, Marcela and Demir, Begum and Markl, Volker},
+  year={2019},
+  month=jul
+}
 
 @inproceedings{fmow2018,
   title={Functional Map of the World},
