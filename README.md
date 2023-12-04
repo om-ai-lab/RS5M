@@ -77,7 +77,7 @@ unzip data/rs5m_test_data.zip
   ckpt_path = "/your/local/path/to/RS5M_ViT-H-14.pt"
   model, _, _ = open_clip.create_model_and_transforms("ViT-H/14", pretrained="laion2b_s32b_b79k")
   checkpoint = torch.load(ckpt_path, map_location="cpu")
-  msg = model.load_state_dict(checkpoint)
+  msg = model.load_state_dict(checkpoint, strict=False)
   model = model.to("cuda")
   img_preprocess = get_preprocess(
         image_resolution=224,
