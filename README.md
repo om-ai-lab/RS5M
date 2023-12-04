@@ -139,16 +139,22 @@ unzip data/rs5m_test_data.zip
 * We will retrain the RS-SD based on v5 version of RS5M dataset. The ckpt will be released here in 1 or 2 weeks.
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
+### RS5M
 * Google Drive: 
   * https://drive.google.com/drive/folders/1NU6d9C50PUSzHdBy-wTi9HYLPHxtsHA3?usp=sharing
+ 
 * Baidu Disk
-  * https://pan.baidu.com/s/1wPYMN4lJRdHbYn4wT4HbHQ?pwd=recd
-  * Password: recd
-  * RS5M_v5 > data
+  * https://pan.baidu.com/s/1AcZcoY5VwdhZOhF_o8o0Fg?pwd=41y2
+  * Password: 41y2
 
 * The BigEarthNet with RGB channels only (with corresponding filenames in our csv files)
    * https://pan.baidu.com/s/1aCqRmnCeow18ry__R_oZow?pwd=6ya9
    * Password: 6ya9
+ 
+### Geometa
+* Baidu Disk
+  * https://pan.baidu.com/s/1NT8qxJJhWjxSlrXq5UqVPg?pwd=mcqc
+  * Password: mcqc
 
 ## MetaFile
 * The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/
