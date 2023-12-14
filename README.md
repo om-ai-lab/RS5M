@@ -1,4 +1,4 @@
-# RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model 
+# RS5M and GeoRSCLIP: A Large Scale Vision-Language Dataset and A Vision-Language Foundation Model for Remote Sensing
 
 * Zilun Zhang, Tiancheng Zhao, Yulong Guo, Jianwei Yin
 
