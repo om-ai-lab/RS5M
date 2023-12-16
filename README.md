@@ -296,7 +296,7 @@ Email: zilun.zhang@zju.edu.cn
 
 WeChat: zilun960822
 
-Slack Group: https://join.slack.com/t/slack-nws5068/shared_invite/zt-1zpu3xt85-m8I3kVCp4qxAA1r1bDmKmQ
+Slack Group: https://join.slack.com/t/visionlanguag-fks1990/shared_invite/zt-290vxhx5y-SUkCzf2aH3G9eu3lye2YvQ
 
 ## Acknowledgement
 
