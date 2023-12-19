@@ -4,11 +4,12 @@
 
 * Preprint (Updated on Dec 03): https://arxiv.org/abs/2306.11300
 
-* Data: https://huggingface.co/datasets/Zilun/RS5M/
+* RS5M Data: https://huggingface.co/datasets/Zilun/RS5M/
 
-* Model: https://huggingface.co/Zilun/GeoRSCLIP
+* CLIP-like Model for Remote Sensing: https://huggingface.co/Zilun/GeoRSCLIP
 
-
+* Stable Diffusion Model for Remote Sensing: https://huggingface.co/Zilun/GeoRSSD
+ 
 ##  RS5M Dataset
 
 Pre-trained Vision-Language Models (VLMs) utilizing extensive image-text paired data have demonstrated unprecedented image-text association capabilities, achieving remarkable results across various downstream tasks. A critical challenge is how to make use of existing large-scale pre-trained VLMs, which are trained on common objects, to perform the domain-specific transfer for accomplishing domain-related downstream tasks. In this paper, we propose a new framework that includes the Domain pre-trained Vision-Language Model (DVLM), bridging the gap between the General Vision-Language Model (GVLM) and domain-specific downstream tasks. Moreover, we present an image-text paired dataset in the field of remote sensing (RS), RS5M, which has 5 million RS images with English descriptions. The dataset is obtained from filtering publicly available image-text paired datasets and captioning label-only RS datasets with pre-trained VLM. These constitute the first large-scale RS image-text paired dataset. Additionally, we fine-tuned the CLIP model and tried several Parameter-Efficient Fine-Tuning methods on RS5M to implement the DVLM. Experimental results show that our proposed dataset is highly effective for various tasks, and our model GeoRSCLIP improves upon the baseline or previous state-of-the-art model by 3% ～ 20% in Zero-shot Classification (ZSC) tasks, 3% ～ 6% in Remote Sensing Cross-Modal Text–Image Retrieval (RSCTIR) and 4% ～ 5% in Semantic Localization (SeLo) tasks.
