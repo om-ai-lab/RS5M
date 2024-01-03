@@ -10,7 +10,7 @@
 
 * Stable Diffusion Model for Remote Sensing: https://huggingface.co/Zilun/GeoRSSD
   
-* Blog: https://medium.com/@zilunzhang822/rs5m-and-georsclip-a-large-scale-vision-language-dataset-and-a-large-vision-language-model-for-934cf91a2827
+* Blog: [Link](https://medium.com/@zilunzhang822/rs5m-and-georsclip-a-large-scale-vision-language-dataset-and-a-large-vision-language-model-for-934cf91a2827)
  
 ##  RS5M Dataset
 
