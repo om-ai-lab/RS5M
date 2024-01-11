@@ -148,8 +148,8 @@ unzip data/rs5m_test_data.zip
 
 ## Dataset Download (About 500GB, 128 webdataset tars)
 ### RS5M
-* Google Drive: 
-  * https://drive.google.com/drive/folders/1NU6d9C50PUSzHdBy-wTi9HYLPHxtsHA3?usp=sharing
+* Dropbox: 
+  * https://www.dropbox.com/scl/fo/kfv40wil27cadhtr1y23r/h?rlkey=t9pexlj0sklgochev2sf70w4s&dl=0
  
 * Baidu Disk
   * https://pan.baidu.com/s/1AcZcoY5VwdhZOhF_o8o0Fg?pwd=41y2
@@ -208,7 +208,7 @@ unzip data/rs5m_test_data.zip
 ### Option 2
 * We also provide the pure image files, which could be used with the metafiles from huggingface. Due to the huge amount of the image data, an SSD drive is recommended.
 
-1. Download the files from the [link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
+1. Download the files from the [Dropbox](https://www.dropbox.com/scl/fo/kfv40wil27cadhtr1y23r/h?rlkey=t9pexlj0sklgochev2sf70w4s&dl=0) or [Baidu Disk link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
    ```bash
        /nas/zilun/RS5M_v5/img_only                                                      
        ├── pub11                        
