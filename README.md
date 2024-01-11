@@ -140,11 +140,9 @@ unzip data/rs5m_test_data.zip
 
 
 
-## RS-SD
-* The RS-SD model that was tuned with 1% data of RS5M has been released:
+## GeoRSSD
+* The GeoRSSD models that were tuned with 1% and 20% data of RS5M has been released:
   * https://huggingface.co/Zilun/GeoRSSD
-  
-* Models using 1% and 20% data of RS5M are provided.
 
 ## RS5M Dataset Download (About 500GB, 128 webdataset tars)
 ### RS5M
