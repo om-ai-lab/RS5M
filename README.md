@@ -144,9 +144,9 @@ unzip data/rs5m_test_data.zip
 * The RS-SD model that was tuned with 1% data of RS5M has been released:
   * https://huggingface.co/Zilun/GeoRSSD
   
-* We are tuning a model with 20% data of RS5M, which will be released later.
+* Models using 1% and 20% data of RS5M are provided.
 
-## Dataset Download (About 500GB, 128 webdataset tars)
+## RS5M Dataset Download (About 500GB, 128 webdataset tars)
 ### RS5M
 * Dropbox: 
   * https://www.dropbox.com/scl/fo/kfv40wil27cadhtr1y23r/h?rlkey=t9pexlj0sklgochev2sf70w4s&dl=0
@@ -167,7 +167,7 @@ unzip data/rs5m_test_data.zip
   * https://pan.baidu.com/s/1NT8qxJJhWjxSlrXq5UqVPg?pwd=mcqc
   * Password: mcqc
 
-## MetaFile
+### MetaFile
 * The metafile and other useful files of RS5M can be found here: https://huggingface.co/datasets/Zilun/RS5M/
 * See README.md in huggingface for a breakdown explanation of each file.
 
