@@ -160,6 +160,9 @@ unzip data/rs5m_test_data.zip
    * Password: 6ya9
  
 ### Geometa
+* Dropbox: 
+  * https://www.dropbox.com/scl/fo/psbr0670835y3jaorp967/h?rlkey=tu6m20g2tcwkz9gy9px7432b4&dl=0
+  
 * Baidu Disk
   * https://pan.baidu.com/s/1NT8qxJJhWjxSlrXq5UqVPg?pwd=mcqc
   * Password: mcqc
@@ -208,7 +211,7 @@ unzip data/rs5m_test_data.zip
 ### Option 2
 * We also provide the pure image files, which could be used with the metafiles from huggingface. Due to the huge amount of the image data, an SSD drive is recommended.
 
-1. Download the files from the [Dropbox](https://www.dropbox.com/scl/fo/kfv40wil27cadhtr1y23r/h?rlkey=t9pexlj0sklgochev2sf70w4s&dl=0) or [Baidu Disk link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
+1. Download the files from the [Dropbox link](https://www.dropbox.com/scl/fo/vpzs67vx4vy5y2go2xvwr/h?rlkey=i524rowdgcodrmvifadqik1oz&dl=0) or [Baidu disk link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
    ```bash
        /nas/zilun/RS5M_v5/img_only                                                      
        ├── pub11                        
