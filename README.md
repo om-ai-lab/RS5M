@@ -209,7 +209,7 @@ unzip data/rs5m_test_data.zip
 ### Option 2
 * We also provide the pure image files, which could be used with the metafiles from huggingface. Due to the huge amount of the image data, an SSD drive is recommended.
 
-1. Download the files from the [Dropbox link](https://www.dropbox.com/scl/fo/vpzs67vx4vy5y2go2xvwr/h?rlkey=i524rowdgcodrmvifadqik1oz&dl=0) or [Baidu disk link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
+1. Download the files from the [Dropbox link](https://www.dropbox.com/scl/fo/vpzs67vx4vy5y2go2xvwr/h?rlkey=i524rowdgcodrmvifadqik1oz&st=xlkfxuhs&dl=0) or [Baidu disk link](https://pan.baidu.com/s/1BIwkbA381diapxTsM4QGRA?pwd=ea86) provided. The dataset directory should look like this:
    ```bash
        /nas/zilun/RS5M_v5/img_only                                                      
        ├── pub11                        
