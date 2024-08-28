@@ -2,6 +2,8 @@
 
 * Zilun Zhang, Tiancheng Zhao, Yulong Guo, Jianwei Yin
 
+* **[2024.07.24] Accepted By TGRS 2024**
+
 * Preprint (Updated on Dec 03): https://arxiv.org/abs/2306.11300
 
 * RS5M Data: https://huggingface.co/datasets/Zilun/RS5M/
