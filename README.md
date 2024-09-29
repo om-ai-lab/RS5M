@@ -318,13 +318,16 @@ https://itra.readthedocs.io/en/latest/Contents/introduction/overview.html
 If you use RS5M or GeoRSCLIP in a research paper, we would appreciate using the following citations:
 
 ```
-@misc{zhang2023rs5m,
-      title={RS5M: A Large Scale Vision-Language Dataset for Remote Sensing Vision-Language Foundation Model}, 
-      author={Zilun Zhang and Tiancheng Zhao and Yulong Guo and Jianwei Yin},
-      year={2023},
-      eprint={2306.11300},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@ARTICLE{10679571,
+  author={Zhang, Zilun and Zhao, Tiancheng and Guo, Yulong and Yin, Jianwei},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={RS5M and GeoRSCLIP: A Large Scale Vision-Language Dataset and A Large Vision-Language Model for Remote Sensing}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Remote sensing;Data models;Visualization;Semantics;Tuning;Location awareness;Computational modeling;Image-text Paired Dataset;Remote Sensing;Vision-Language Model;Parameter Efficient Tuning;General Vision-Language Model;Domain Vision-Language Model;Remote Sensing Cross-Modal Text–Image Retrieval;Zero-shot Classification;Semantic Localization},
+  doi={10.1109/TGRS.2024.3449154}
 }
 ```
 
