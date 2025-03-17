@@ -6,7 +6,7 @@
 
 * **[2023.12.03] Preprint: https://arxiv.org/abs/2306.11300**
 
-* RS5M Data: https://huggingface.co/datasets/Zilun/RS5M/
+* RS5M Data: https://huggingface.co/datasets/omlab/RS5M and https://huggingface.co/datasets/Zilun/RS5M/
 
 * CLIP-like Model for Remote Sensing: https://huggingface.co/Zilun/GeoRSCLIP
 
